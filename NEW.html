@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข่าวสารกิจกรรมบริษัท</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+        .container {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            flex: 1 1 calc(33.333% - 20px); /* ทำให้แต่ละบล็อกมีขนาดหนึ่งในสาม */
+            display: none; /* ซ่อนทั้งหมดโดยเริ่มต้น */
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        .details {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer img {
+            width: 150px;
+            height: auto;
+            margin: 5px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .footer img:hover {
+            transform: scale(1.1);
+        }
+        .show {
+            display: block; /* แสดงเมื่อมีการเรียก */
+        }
+        .nav-btn {
+            display: none; /* ซ่อนปุ่มเริ่มต้น */
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .activity-wrapper {
+            display: flex; /* ใช้ flexbox เพื่อจัดเรียงบล็อก */
+            flex-wrap: wrap; /* อนุญาตให้มีการตัดบรรทัด */
+            gap: 20px; /* ระยะห่างระหว่างบล็อก */
+        }
+    </style>
+</head>
+<body>
+
+<div class="activity-wrapper">
+    <div id="activity1" class="container show">
+        <h1>🌟 ข่าวสารกิจกรรมบริษัท [ชื่อบริษัท] 🌟</h1>
+        <div class="details">
+            <p><strong>📅 วันที่:</strong> [วัน/เดือน/ปี]</p>
+            <p><strong>📝 หัวข้อ:</strong> [ชื่อกิจกรรม]</p>
+            <p><strong>📍 สถานที่:</strong> [สถานที่จัดกิจกรรม]</p>
+        </div>
+        <div class="footer">
+            <p>📷 ภาพกิจกรรม:</p>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                <img src="img/activity/CP RAM/92065.jpg" alt="">
+                <img src="img/activity/CP RAM/92065.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="activity2" class="container">
+        <h1>🌟 ข่าวสารกิจกรรมบริษัท [ชื่อบริษัท] 🌟</h1>
+        <div class="details">
+            <p><strong>📅 วันที่:</strong> [วัน/เดือน/ปี]</p>
+            <p><strong>📝 หัวข้อ:</strong> [ชื่อกิจกรรม]</p>
+            <p><strong>📍 สถานที่:</strong> [สถานที่จัดกิจกรรม]</p>
+        </div>
+        <div class="footer">
+            <p>📷 ภาพกิจกรรม:</p>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                <img src="img/activity/CP RAM/92065.jpg" alt="">
+                <img src="img/activity/CP RAM/92065.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="activity3" class="container">
+        <h1>🌟 ข่าวสารกิจกรรมบริษัท [ชื่อบริษัท] 🌟</h1>
+        <div class="details">
+            <p><strong>📅 วันที่:</strong> [วัน/เดือน/ปี]</p>
+            <p><strong>📝 หัวข้อ:</strong> [ชื่อกิจกรรม]</p>
+            <p><strong>📍 สถานที่:</strong> [สถานที่จัดกิจกรรม]</p>
+        </div>
+        <div class="footer">
+            <p>📷 ภาพกิจกรรม:</p>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                <img src="img/activity/CP RAM/92065.jpg" alt="">
+                <img src="img/activity/CP RAM/92065.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="activity4" class="container">
+        <h1>🌟 ข่าวสารกิจกรรมบริษัท [ชื่อบริษัท] 🌟</h1>
+        <div class="details">
+            <p><strong>📅 วันที่:</strong> [วัน/เดือน/ปี]</p>
+            <p><strong>📝 หัวข้อ:</strong> [ชื่อกิจกรรม]</p>
+            <p><strong>📍 สถานที่:</strong> [สถานที่จัดกิจกรรม]</p>
+        </div>
+        <div class="footer">
+            <p>📷 ภาพกิจกรรม:</p>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+                <img src="img/activity/CP RAM/92065.jpg" alt="">
+                <img src="img/activity/CP RAM/92065.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<button id="prevBtn" class="nav-btn" onclick="showPreviousActivity()">กลับ</button>
+<button id="nextBtn" class="nav-btn" onclick="showNextActivity()">หน้าต่อไป</button>
+
+<script>
+    let currentActivityIndex = 0; // กำหนดดัชนีเริ่มต้น
+    const activities = document.querySelectorAll('.container');
+
+    // แสดงกิจกรรมแรก
+    activities.forEach((activity, index) => {
+        if (index < 3) activity.classList.add('show'); // แสดงกิจกรรม 3 อันดับแรก
+    });
+
+    // แสดงปุ่ม "หน้าต่อไป" ถ้ามีกิจกรรมมากกว่า 3
+    if (activities.length > 3) {
+        document.getElementById('nextBtn').style.display = 'block';
+    }
+
+    function showNextActivity() {
+        currentActivityIndex++;
+        if (currentActivityIndex < activities.length) {
+            activities[currentActivityIndex - 1].classList.remove('show'); // ซ่อนกิจกรรมก่อนหน้า
+            activities[currentActivityIndex].classList.add('show'); // แสดงกิจกรรมถัดไป
+
+            // แสดงปุ่ม "กลับ" เมื่อไม่ใช่กิจกรรมแรก
+            if (currentActivityIndex > 0) {
+                document.getElementById('prevBtn').style.display = 'block';
+            }
+
+            // ถ้าคุณแสดงกิจกรรมถึงที่สุดแล้ว ซ่อนปุ่ม "หน้าต่อไป"
+            if (currentActivityIndex === activities.length - 1) {
+                document.getElementById('nextBtn').style.display = 'none';
+            }
+        }
+    }
+
+    function showPreviousActivity() {
+        if (currentActivityIndex > 0) {
+            activities[currentActivityIndex].classList.remove('show'); // ซ่อนกิจกรรมปัจจุบัน
+            currentActivityIndex--;
+
+            activities[currentActivityIndex].classList.add('show'); // แสดงกิจกรรมก่อนหน้า
+
+            // ซ่อนปุ่ม "กลับ" เมื่ออยู่ที่กิจกรรมแรก
+            if (currentActivityIndex === 0) {
+                document.getElementById('prevBtn').style.display = 'none';
+            }
+
+            // แสดงปุ่ม "หน้าต่อไป" เมื่อไม่ใช่กิจกรรมสุดท้าย
+            if (currentActivityIndex < activities.length - 1) {
+                document.getElementById('nextBtn').style.display = 'block';
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
